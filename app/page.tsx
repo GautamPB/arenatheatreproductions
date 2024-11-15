@@ -215,7 +215,7 @@ export default function Home() {
                 {/* where we've performed */}
                 <div className="mt-[4rem] px-4 space-y-3 w-full">
                     <h1 className="text-xl font-bold mt-4">
-                        WHERE WE'VE PERFORMED
+                        WHERE WE&apos;VE PERFORMED
                     </h1>
 
                     <div className="flex flex-wrap gap-12 items-center justify-center">
@@ -249,8 +249,9 @@ export default function Home() {
             {/* the mission */}
             <div className="my-[6rem] py-20 flex items-center flex-col px-8 space-y-6 bg-black w-full">
                 <h1 className="font-bold text-white text-3xl text-center">
-                    "The mission of the theatre , after all, is to raise the
-                    consciousness of people to their human possibilities"
+                    &quot;The mission of the theatre , after all, is to raise
+                    the consciousness of people to their human
+                    possibilities&quot;
                 </h1>
 
                 <h3 className="text-gray-500">Arthur Miller</h3>

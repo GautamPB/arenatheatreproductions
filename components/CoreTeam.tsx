@@ -1,7 +1,8 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 
 type Props = {
-    image: any
+    image: StaticImport
     name: string
     designation: string
 }

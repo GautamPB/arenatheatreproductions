@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import StageIcon from '@/assets/images/Stage.png'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 type Props = {
-    image: any
+    image: StaticImport
     location: string
 }
 
