@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Logo from '@/assets/images/ATP Logo.png'
+import Cover from '@/assets/images/Cover.jpeg'
 import CoreTeam from '@/components/CoreTeam'
 import Spaces from '@/components/Spaces'
 import Tahera from '@/assets/images/Tahera.jpg'
@@ -23,17 +24,28 @@ export default function Home() {
     return (
         <div>
             {/* first section */}
-            <div className="flex flex-col items-center justify-center bg-black h-[70vh]">
-                <div className="my-8">
-                    <h1 className="text-2xl text-center font-bold">
-                        <span className="text-[#E2E4E7]">ARENA</span> &nbsp;
-                        <span className="text-[#6550C2]">THEATRE</span> &nbsp;
-                        <span className="text-[#5B98FF]">PRODUCTIONS</span>
-                    </h1>
-                </div>
+            <div className="relative h-[70vh]">
+                <Image
+                    src={Cover}
+                    alt="coverPhoto"
+                    className="w-full object-cover blur-md h-full absolute top-0 left-0"
+                />
+                <div className="w-full h-full space-y-8 absolute top-0 text-[#E2E4E7] bg-black/30 left-0 flex flex-col items-center justify-center">
+                    <div>
+                        <h1 className="text-2xl text-center font-bold">
+                            <span>ARENA</span> &nbsp;
+                            <span>THEATRE</span> &nbsp;
+                            <span>PRODUCTIONS</span>
+                        </h1>
+                    </div>
 
-                <div className="bg-white p-4 rounded-full">
-                    <Image src={Logo} alt="atp_logo" width={150} />
+                    <div className="bg-white p-4 rounded-full">
+                        <Image src={Logo} alt="atp_logo" width={150} />
+                    </div>
+
+                    <h3 className="font-semibold text-md">
+                        WHERE STORIES UNFOLD
+                    </h3>
                 </div>
             </div>
 
@@ -133,12 +145,25 @@ export default function Home() {
                                 <br />
                                 <br />
                             </div>
-                            <Image
-                                src={Tahera}
-                                alt="tahera"
-                                width={175}
-                                className="mx-auto md:mx-0 rounded-full"
-                            />
+
+                            <div className="flex flex-col items-center mb-6 md:mb-0 mx-auto md:mx-0">
+                                {/* <Image
+                                    src={Tahera}
+                                    alt="tahera"
+                                    width={175}
+                                    className="rounded-full mb-3"
+                                />
+
+                                <h1 className="font-semibold text-lg">
+                                    Tahera
+                                </h1>
+                                <h3 className="italic">Founder and Director</h3> */}
+                                <CoreTeam
+                                    image={Tahera}
+                                    name="Tahera"
+                                    designation="Founder and Director"
+                                />
+                            </div>
                         </div>
 
                         <span className="font-semibold">Work History:</span>
@@ -247,8 +272,8 @@ export default function Home() {
             </div>
 
             {/* the mission */}
-            <div className="my-[6rem] py-20 flex items-center flex-col px-8 space-y-6 bg-black w-full">
-                <h1 className="font-bold text-white text-3xl text-center">
+            <div className="mt-[6rem] py-20 flex items-center flex-col px-8 space-y-6 bg-black w-full">
+                <h1 className="font-bold max-w-xl text-white text-3xl text-center">
                     &quot;The mission of the theatre , after all, is to raise
                     the consciousness of people to their human
                     possibilities&quot;
