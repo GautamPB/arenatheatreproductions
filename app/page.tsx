@@ -250,11 +250,11 @@ export default function Home() {
                         <Spaces image={AG} location="Atta Galatta" />
                         <Spaces image={Dhurii} location="Dhurii" />
 
-                        <Spaces image={Rangbhoomi} location="Rangbhoomi, HYD" />
+                        <Spaces image={Rangbhoomi} location="Rangbhoomi HYD" />
                         <Spaces image={Vyoma} location="VYOMA Artspace" />
                         <Spaces
                             image={Wanderers}
-                            location="Wanderers, Kalyanagar"
+                            location="Wanderers Kalyanagar"
                         />
                     </div>
                 </div>

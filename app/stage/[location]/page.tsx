@@ -6,7 +6,7 @@ const Location = async ({ params }: Props) => {
             return result.location
         })
     )
-    console.log(stage)
+
     return (
         <div>
             <h1>{stage}</h1>
