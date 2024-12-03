@@ -5,7 +5,6 @@ import Footer from '@/components/Footer'
 
 // https://fonts.google.com/specimen/Dancing+Script?preview.text=Reviews
 
-
 // const geistSans = localFont({
 //     src: './fonts/GeistVF.woff',
 //     variable: '--font-geist-sans',
