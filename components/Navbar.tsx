@@ -8,9 +8,11 @@ import Ventures from '@/assets/icons/ventures.svg'
 import Reviews from '@/assets/icons/reviews.svg'
 import Menu from '@/assets/icons/menu.svg'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
+    const router = useRouter()
 
     return (
         <div
@@ -18,7 +20,13 @@ const Navbar = () => {
                 !sidebarOpen && 'shadow-lg'
             } px-4 py-4 w-full sticky top-0 z-50 flex items-center justify-between`}
         >
-            <Image src={Logo} alt="logo" width={60} />
+            <Image
+                className="cursor-pointer"
+                onClick={() => router.push('/')}
+                src={Logo}
+                alt="logo"
+                width={60}
+            />
 
             {/* home - pages 1 to 5 + theatre quote + upcoming show */}
             {/* ventures - dropdown menu with all the shows */}
@@ -26,9 +34,17 @@ const Navbar = () => {
 
             {/* navbar options */}
             <div className="md:flex hidden items-center space-x-6">
-                <NavbarComponent Icon={Home} title="Home" />
-                <NavbarComponent Icon={Ventures} title="Ventures" />
-                <NavbarComponent Icon={Reviews} title="Reviews" />
+                <NavbarComponent Icon={Home} title="Home" path="/" />
+                <NavbarComponent
+                    Icon={Ventures}
+                    title="Ventures"
+                    path="/ventures"
+                />
+                <NavbarComponent
+                    Icon={Reviews}
+                    title="Reviews"
+                    path="/reviews"
+                />
             </div>
 
             <Image
@@ -42,9 +58,17 @@ const Navbar = () => {
             {/* sidebar */}
             {sidebarOpen && (
                 <div className="md:hidden bg-white border-t space-y-3 p-4 shadow-lg absolute left-0 top-[5.5rem] w-full">
-                    <NavbarComponent Icon={Home} title="Home" />
-                    <NavbarComponent Icon={Ventures} title="Ventures" />
-                    <NavbarComponent Icon={Reviews} title="Reviews" />
+                    <NavbarComponent Icon={Home} title="Home" path="/" />
+                    <NavbarComponent
+                        Icon={Ventures}
+                        title="Ventures"
+                        path="/ventures"
+                    />
+                    <NavbarComponent
+                        Icon={Reviews}
+                        title="Reviews"
+                        path="/reviews"
+                    />
                 </div>
             )}
         </div>

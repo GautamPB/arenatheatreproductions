@@ -147,17 +147,6 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col items-center mb-6 md:mb-0 mx-auto md:mx-0">
-                                {/* <Image
-                                    src={Tahera}
-                                    alt="tahera"
-                                    width={175}
-                                    className="rounded-full mb-3"
-                                />
-
-                                <h1 className="font-semibold text-lg">
-                                    Tahera
-                                </h1>
-                                <h3 className="italic">Founder and Director</h3> */}
                                 <CoreTeam
                                     image={Tahera}
                                     name="Tahera"
