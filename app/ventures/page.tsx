@@ -17,11 +17,8 @@ const Ventures = () => {
                     lineOne={
                         "Tahera’s Directoral Debut, Fourteen was a play based around The Pringles residence, experiencing a tumultuous night where a grand dinner party planned sees it's fair share of hiccups as guests drop out at the eve of the festivities."
                     }
-                    lineTwo={
-                        'Staged at Vyoma Art Space, JP Nagar on 13th January 2022. Despite covid restrictions, 100+ people were in attendance.'
-                    }
-                    lineThree={''}
                     swap={false}
+                    pagePath="/plays/fourteen"
                 />
 
                 <Venture
@@ -30,52 +27,38 @@ const Ventures = () => {
                     lineOne={
                         'ATP’s first large scale production took place in 2022, when we brought Neel Chaudhuri’s “Taramandal” to bangalore audiences. '
                     }
-                    lineTwo={
-                        'The play is a collection of short stories by Satyajit Ray, on the lives of actors and artists across ages. '
-                    }
-                    lineThree={
-                        'Shows were succesffully put up in BIC & Jagriti theatres in Bengaluru, and we also travelled with it to Rangbhoomi in Hyderabad. '
-                    }
                     swap={true}
+                    pagePath="/plays/taramandal"
                 />
 
                 <Venture
                     poster={tvm}
                     title="The Vagina Monologues"
                     lineOne={
-                        "On the occasion of international Women’s Day, we staged - 'The Vagina Monologues', written by Eve Ensler, which is an innovative  play that features some of the candid, funny, painful, yearning, insights of women talking about their experience with their Vaginas."
+                        "On the occasion of international Women’s Day, we staged - 'The Vagina Monologues', written by Eve Ensler, which is an innovative play where women talk about their experience with their Vaginas."
                     }
-                    lineTwo={
-                        'Our most requested production by far, The Vagina Monolgoues resonated with Bangalore audiences so much, it became our longest running production at the time. '
-                    }
-                    lineThree=""
                     swap={false}
+                    pagePath="/plays/the-vagina-monologues"
                 />
 
                 <Venture
                     poster={tkamb}
                     title="To Kill A Mockingbird"
                     lineOne={
-                        'Our Largest and longest running production yet- “To Kill A Mockingbird” which we have successfully staged at the  Chowdiah Memorial Hall, Prestige Centre for Performing arts, Jagriti Theatre and the prestigious Rangashankara.  '
+                        'Our Largest and longest running production yet- “To Kill A Mockingbird” was a massive success and loved by every audience member.'
                     }
-                    lineTwo={
-                        'A footfall of over 1000 was recorded for each of the productions. '
-                    }
-                    lineThree=""
                     swap={true}
+                    pagePath="/plays/to-kill-a-mockingbird"
                 />
 
                 <Venture
                     poster={seagull}
                     title="The Seagull"
                     lineOne={
-                        'In our quest to ingnite passion in international theatre works, we undertook what many consider one of the hardest plays to do -legendary Russian playright, Anton Chekhov’s “The Seagull”'
+                        "Our first step to ignite passion in international theatre, we successfully staged what many consider one of the hardest plays ever, Anton Chekhov's The Seagull which was very well received by our audiences."
                     }
-                    lineTwo={
-                        'Adapted to a contemporary setting by our inhouse writer, The Seagull debuted at BIC and is our most frequently performed production.'
-                    }
-                    lineThree=""
                     swap={false}
+                    pagePath="/plays/the-seagull"
                 />
             </div>
         </div>

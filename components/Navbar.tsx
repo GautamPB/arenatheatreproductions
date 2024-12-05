@@ -42,8 +42,8 @@ const Navbar = () => {
                 />
                 <NavbarComponent
                     Icon={Reviews}
-                    title="Reviews"
-                    path="/reviews"
+                    title="Workshops"
+                    path="/workshops"
                 />
             </div>
 
@@ -66,8 +66,8 @@ const Navbar = () => {
                     />
                     <NavbarComponent
                         Icon={Reviews}
-                        title="Reviews"
-                        path="/reviews"
+                        title="Workshops"
+                        path="/workshops"
                     />
                 </div>
             )}
