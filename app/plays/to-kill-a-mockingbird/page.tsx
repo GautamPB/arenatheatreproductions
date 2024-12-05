@@ -1,4 +1,4 @@
-import { Dancing_Script, Goudy_Bookletter_1911 } from 'next/font/google'
+import { Dancing_Script } from 'next/font/google'
 import tkamb from '@/assets/images/posters/tkamb.png'
 import Image from 'next/image'
 
