@@ -60,7 +60,7 @@ const TKAMB = () => {
                             alt="photo"
                             width={1920}
                             height={1080}
-                            className="max-w-[35rem] min-w-[20rem]"
+                            className="w-4/5"
                         />
 
                         <h1 className="text-lg md:text-xl lg:text-2xl">
@@ -92,13 +92,13 @@ const TKAMB = () => {
                     />
 
                     {/* section 2.3 */}
-                    <div className="flex md:flex-row flex-col-reverse space-y-3 items-start mt-[5rem] md:mt-[10rem] md:space-x-10">
+                    <div className="flex md:flex-row flex-col-reverse items-center md:items-start mt-[5rem] md:mt-[10rem] md:space-x-10">
                         <Image
                             src={Photo3}
                             alt="photo"
                             width={1920}
                             height={1080}
-                            className="max-w-[35rem] min-w-[20rem]"
+                            className="w-4/5 mt-3"
                         />
 
                         <h1 className="text-lg md:text-xl lg:text-2xl">
