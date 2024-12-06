@@ -4,6 +4,14 @@ import Image from 'next/image'
 import Photo1 from '@/assets/images/tkamb/photo1.png'
 import Photo2 from '@/assets/images/tkamb/photo2.png'
 import Photo3 from '@/assets/images/tkamb/photo3.png'
+import Express from '@/assets/images/tkamb/media/express.jpg'
+import Herrald from '@/assets/images/tkamb/media/herrald.jpg'
+import Hindu from '@/assets/images/tkamb/media/hindu.png'
+import Leaflet from '@/assets/images/tkamb/media/leaflet.jpg'
+import Premji from '@/assets/images/tkamb/media/premji.jpg'
+import Southfirst from '@/assets/images/tkamb/media/southfirst.jpg'
+import TOI from '@/assets/images/tkamb/media/toi.png'
+import MediaCoverage from '@/components/MediaCoverage'
 
 const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
@@ -52,7 +60,7 @@ const TKAMB = () => {
                             alt="photo"
                             width={1920}
                             height={1080}
-                            className="min-w-1/4 max-w-1/2"
+                            className="max-w-[35rem] min-w-[20rem]"
                         />
 
                         <h1 className="text-lg md:text-xl lg:text-2xl">
@@ -90,13 +98,51 @@ const TKAMB = () => {
                             alt="photo"
                             width={1920}
                             height={1080}
-                            className="min-w-1/4 max-w-1/2"
+                            className="max-w-[35rem] min-w-[20rem]"
                         />
 
                         <h1 className="text-lg md:text-xl lg:text-2xl">
-                            A footfall of over 1000 was recorded for each of the
-                            productions.
+                            A footfall of{' '}
+                            <span className="font-bold">over 1000</span> was
+                            recorded for each of the productions.
                         </h1>
+                    </div>
+                </div>
+
+                {/* media coverage */}
+                <div className="mt-[5rem]">
+                    <h1
+                        className={`${dancingScript.className} text-4xl text-center`}
+                    >
+                        Media Coverage
+                    </h1>
+
+                    <div className="flex flex-wrap gap-8 my-4 items-center justify-center">
+                        <MediaCoverage Photo={Hindu} newspaper="The Hindu" />
+                        <MediaCoverage
+                            Photo={TOI}
+                            newspaper="The Times Of India"
+                        />
+                        <MediaCoverage
+                            Photo={Premji}
+                            newspaper="Azim Premji University"
+                        />
+                        <MediaCoverage
+                            Photo={Herrald}
+                            newspaper="Deccan Herrald"
+                        />
+                        <MediaCoverage
+                            Photo={Express}
+                            newspaper="Bangalore Express"
+                        />
+                        <MediaCoverage
+                            Photo={Southfirst}
+                            newspaper="South First"
+                        />
+                        <MediaCoverage
+                            Photo={Leaflet}
+                            newspaper="The Leaflet"
+                        />
                     </div>
                 </div>
             </div>
