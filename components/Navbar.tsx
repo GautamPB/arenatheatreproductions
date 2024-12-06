@@ -7,12 +7,17 @@ import Home from '@/assets/icons/home.svg'
 import Ventures from '@/assets/icons/ventures.svg'
 import Reviews from '@/assets/icons/reviews.svg'
 import Menu from '@/assets/icons/menu.svg'
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useEffect } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
     const router = useRouter()
+    const dynamicPath = usePathname()
+
+    useEffect(() => {
+        setSidebarOpen(false)
+    }, [dynamicPath])
 
     return (
         <div
