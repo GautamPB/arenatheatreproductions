@@ -59,7 +59,7 @@ const TVM = () => {
                             <span className="font-bold">
                                 International Women’s Day
                             </span>
-                            , we staged - "The Vagina Monologues",{' '}
+                            , we staged - &quot;The Vagina Monologues&quot;,{' '}
                             <span className="font-bold">
                                 written by Eve Ensler
                             </span>
