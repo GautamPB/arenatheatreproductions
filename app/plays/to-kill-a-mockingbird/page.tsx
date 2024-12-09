@@ -124,10 +124,6 @@ const TKAMB = () => {
                             newspaper="The Times Of India"
                         />
                         <MediaCoverage
-                            Photo={Premji}
-                            newspaper="Azim Premji University"
-                        />
-                        <MediaCoverage
                             Photo={Herrald}
                             newspaper="Deccan Herrald"
                         />
@@ -142,6 +138,10 @@ const TKAMB = () => {
                         <MediaCoverage
                             Photo={Leaflet}
                             newspaper="The Leaflet"
+                        />
+                        <MediaCoverage
+                            Photo={Premji}
+                            newspaper="Azim Premji University"
                         />
                     </div>
                 </div>

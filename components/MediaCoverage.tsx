@@ -9,7 +9,7 @@ type Props = {
 const MediaCoverage = ({ Photo, newspaper }: Props) => {
     return (
         <div className="relative flex flex-col items-center border p-4">
-            <Image src={Photo} alt="paper" className="max-w-[15rem]" />
+            <Image src={Photo} alt="paper" className="max-w-[20rem]" />
 
             <div className="absolute -bottom-6 font-bold">
                 <h1 className="text-white bg-[#402E84] px-4 py-2">

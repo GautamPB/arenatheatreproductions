@@ -61,8 +61,8 @@ const Fourteen = () => {
                             </span>{' '}
                             Fourteen was a play based around The Pringles
                             residence, experiencing a tumultuous night where a
-                            grand dinner party planned sees it's fair share of
-                            hiccups as guests drop out at the eve of the
+                            grand dinner party planned sees it&pos;s fair share
+                            of hiccups as guests drop out at the eve of the
                             festivities.
                         </h1>
                     </div>
