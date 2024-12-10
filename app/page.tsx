@@ -4,11 +4,14 @@ import Cover from '@/assets/images/Cover.jpeg'
 import CoreTeam from '@/components/CoreTeam'
 import Spaces from '@/components/Spaces'
 import Tahera from '@/assets/images/Tahera.jpg'
-import Fazal from '@/assets/images/Fazal.png'
+import Fazal from '@/assets/images/Fazal.jpeg'
 import Nishitha from '@/assets/images/Nishitha.png'
 import Saad from '@/assets/images/Saad.jpeg'
 import Gautam from '@/assets/images/Gautam.png'
-import Minna from '@/assets/images/Minna.png'
+import Krishna from '@/assets/images/Krishna.jpeg'
+import Liana from '@/assets/images/Liana.jpeg'
+import Nithin from '@/assets/images/Nithin.jpeg'
+import Sheiraphi from '@/assets/images/Sheiraphi.jpeg'
 import AG from '@/assets/images/Atta Galatta.png'
 import BIC from '@/assets/images/BIC.png'
 import Chowdiah from '@/assets/images/Chowdiah.png'
@@ -219,9 +222,27 @@ export default function Home() {
                         />
 
                         <CoreTeam
-                            image={Minna}
-                            name="Minna"
-                            designation="Discipline in-charge"
+                            image={Krishna}
+                            name="Krishna Sharma"
+                            designation="Social Media"
+                        />
+
+                        <CoreTeam
+                            image={Liana}
+                            name="Liana Tissan"
+                            designation="Production"
+                        />
+
+                        <CoreTeam
+                            image={Nithin}
+                            name="K Nithin"
+                            designation="Production"
+                        />
+
+                        <CoreTeam
+                            image={Sheiraphi}
+                            name="Sheiraphi Silda Thangkhiew"
+                            designation="Production"
                         />
                     </div>
                 </div>

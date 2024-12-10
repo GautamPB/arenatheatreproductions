@@ -14,7 +14,7 @@ const CoreTeam = ({ image, name, designation }: Props) => {
                 src={image}
                 alt="coreTeam"
                 width={150}
-                className="rounded-full"
+                className="rounded-full w-40 h-40 object-cover"
             />
 
             <div className="flex flex-col items-center">

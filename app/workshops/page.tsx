@@ -51,7 +51,7 @@ const Workshops = () => {
             <h1
                 className={`${dancingScript.className} text-4xl font-bold text-center`}
             >
-                Workshops
+                NGO Visits
             </h1>
 
             <p className="text-md md:text-lg lg:text-xl mt-4">
