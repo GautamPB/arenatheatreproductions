@@ -59,7 +59,7 @@ export default function Home() {
                     It was only in the theatre that I lived
                 </h1>
 
-                <p>-Oscar Wilde</p>
+                <p>- Oscar Wilde</p>
             </div>
 
             <div className="mx-auto">
