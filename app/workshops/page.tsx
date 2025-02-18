@@ -1,20 +1,13 @@
 import Image from 'next/image'
-import { Dancing_Script } from 'next/font/google'
 import Photo1 from '@/assets/images/workshops/Photo1.png'
 import Photo2 from '@/assets/images/workshops/Photo2.png'
 import Photo3 from '@/assets/images/workshops/Photo3.png'
 import MediaCoverage from '@/components/MediaCoverage'
 
-const dancingScript = Dancing_Script({ subsets: ['latin'] })
-
 const Workshops = () => {
     return (
         <div className="max-w-5xl mx-auto mt-6 p-4">
-            <h1
-                className={`${dancingScript.className} text-4xl font-bold text-center`}
-            >
-                Workshops
-            </h1>
+            <h1 className={`text-4xl font-bold text-center`}>Workshops</h1>
 
             <div className="mt-10">
                 {/* section 1 */}
@@ -48,11 +41,7 @@ const Workshops = () => {
                 </div>
             </div>
 
-            <h1
-                className={`${dancingScript.className} text-4xl font-bold text-center`}
-            >
-                NGO Visits
-            </h1>
+            <h1 className="text-4xl font-bold text-center">NGO Visits</h1>
 
             <p className="text-md md:text-lg lg:text-xl mt-4">
                 After every show, we have a tradition of visiting an NGO or

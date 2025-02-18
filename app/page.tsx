@@ -22,7 +22,7 @@ import RS from '@/assets/images/Rangashankara.png'
 import Rangbhoomi from '@/assets/images/Rangbhoomi.png'
 import Vyoma from '@/assets/images/VYOMA.png'
 import Wanderers from '@/assets/images/Wanderers.png'
-import tbm from '@/assets/images/posters/tumhaare baare mein.png'
+import upcoming from '@/assets/images/posters/upcoming.png'
 
 export default function Home() {
     return (
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
             {/* second section */}
-            <div className="py-10 flex text-center space-y-6 flex-col items-center">
+            <div className="py-20 flex text-center space-y-6 flex-col items-center">
                 <h1 className="text-[#4F5655] text-4xl font-bold">
                     It was only in the theatre that I lived
                 </h1>
@@ -64,22 +64,23 @@ export default function Home() {
 
             <div className="mx-auto">
                 {/* upcoming event */}
-                <div className="space-y-3 px-4 w-full max-w-5xl mx-auto">
-                    <h1 className="text-2xl mb-10 text-center font-bold mt-4">
-                        UPCOMING EVENT
-                    </h1>
+                <div className="py-12 bg-[#D9D9D9]">
+                    <div className="space-y-3 px-4 w-full max-w-5xl mx-auto">
+                        <h1 className="text-3xl mb-10 text-center font-bold text-black mt-4">
+                            UPCOMING EVENT
+                        </h1>
 
-                    <div className="flex flex-col md:flex-row md:items-start justify-between items-center md:space-y-0 md:space-x-6  space-y-6 mt-4 space">
-                        <Image
-                            src={tbm}
-                            alt="upcomingEventPoster"
-                            width={100}
-                            height={200}
-                            className="max-w-[30rem] min-w-[20rem]"
-                        />
+                        <div className="flex flex-col md:flex-row items-center md:space-y-0 md:space-x-6  space-y-6 mt-4 space">
+                            <Image
+                                src={upcoming}
+                                alt="upcomingEventPoster"
+                                width={100}
+                                height={200}
+                                className="max-w-[30rem] min-w-[20rem]"
+                            />
 
-                        <div>
-                            <p>
+                            <div>
+                                {/* <p>
                                 It is a play which focuses on{' '}
                                 <span className="font-bold">
                                     modern relationships, its complexities and
@@ -104,16 +105,20 @@ export default function Home() {
                             <p className="italic">
                                 We will be premiering at Atta Galatta,
                                 Indiranagar on 8th and 9th February, 2025
-                            </p>
+                            </p> */}
 
-                            <br />
-                            <br />
+                                <h1 className="italic font-bold text-2xl text-center">
+                                    &quot;For you, a thousand times over&quot;
+                                </h1>
 
-                            <div className="italic text-gray-400">
-                                <p>Venue - Atta Galatta</p>
-                                <p>Date - 8th and 9th February, 2025</p>
-                                <p>Time - 4:00PM & 7:00PM</p>
-                                <p>
+                                <br />
+                                <br />
+
+                                <div className="italic">
+                                    <p>Venue - Good Shepherd Auditorium</p>
+                                    <p>Date - April 5th, 2025</p>
+                                    <p>Time - 4:00PM & 7:00PM</p>
+                                    {/* <p>
                                     Ticket link:{' '}
                                     <a
                                         target="_blank"
@@ -122,7 +127,8 @@ export default function Home() {
                                     >
                                         www.bookmyshow.com
                                     </a>
-                                </p>
+                                </p> */}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,6 +258,11 @@ export default function Home() {
                                     Conducted many workshops on Voice, Acting
                                     and Personality Development for Individuals
                                     and Corporates.
+                                </li>
+                                <li>
+                                    Theatre Coach at New Horizon Public School,
+                                    Basil Woods International and Utsaah Spirit
+                                    of Learning
                                 </li>
                             </ul>
                         </div>
