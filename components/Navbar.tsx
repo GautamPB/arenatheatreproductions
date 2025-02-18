@@ -6,6 +6,7 @@ import NavbarComponent from './NavbarComponent'
 import Home from '@/assets/icons/home.svg'
 import Ventures from '@/assets/icons/ventures.svg'
 import Reviews from '@/assets/icons/reviews.svg'
+import Contact from '@/assets/icons/contact.svg'
 import Menu from '@/assets/icons/menu.svg'
 import { useState, useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
@@ -23,7 +24,7 @@ const Navbar = () => {
         <div
             className={`bg-white ${
                 !sidebarOpen && 'shadow-lg'
-            } px-4 py-4 w-full sticky top-0 z-50 flex items-center justify-between`}
+            } p-4 w-full sticky top-0 z-50 flex items-center justify-between`}
         >
             <Image
                 className="cursor-pointer"
@@ -50,6 +51,12 @@ const Navbar = () => {
                     title="Workshops"
                     path="/workshops"
                 />
+
+                <NavbarComponent
+                    Icon={Contact}
+                    title="Contact Us"
+                    path="/contact"
+                />
             </div>
 
             <Image
@@ -73,6 +80,11 @@ const Navbar = () => {
                         Icon={Reviews}
                         title="Workshops"
                         path="/workshops"
+                    />
+                    <NavbarComponent
+                        Icon={Contact}
+                        title="Contact Us"
+                        path="/contact"
                     />
                 </div>
             )}

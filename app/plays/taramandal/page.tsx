@@ -13,7 +13,7 @@ const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
 const Taramandal = () => {
     return (
-        <div className="max-w-7xl mx-auto mt-6 p-4">
+        <div className="max-w-5xl mx-auto mt-6 p-4">
             <h1
                 className={`${dancingScript.className} text-4xl font-bold text-center`}
             >

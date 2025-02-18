@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className="bg-[#117DBD] py-6 space-y-4 text-white flex flex-col items-center">
+        <div className="bg-[#117DBD] py-6 px-4 space-y-4 text-white flex flex-col items-center">
             <h1 className="text-3xl font-bold">FIND US</h1>
             <p className="text-center">
                 707, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar,
@@ -35,7 +35,9 @@ const Footer = () => {
                 </Link>
             </div>
 
-            <p>Copyright © 2024 Arena Theatre Productions</p>
+            <p className="text-center">
+                Copyright © 2024 Arena Theatre Productions
+            </p>
         </div>
     )
 }
