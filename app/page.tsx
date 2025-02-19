@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import Logo from '@/assets/images/ATP Logo.png'
-import Cover from '@/assets/images/Cover.jpeg'
+// import Logo from '@/assets/images/ATP Logo.png'
+// import Cover from '@/assets/images/Cover.jpeg'
+import Banner from '@/assets/images/Banner.png'
 import CoreTeam from '@/components/CoreTeam'
 import Spaces from '@/components/Spaces'
 import Tahera from '@/assets/images/Tahera.jpg'
@@ -26,10 +27,10 @@ import upcoming from '@/assets/images/posters/upcoming.png'
 
 export default function Home() {
     return (
-        <div>
+        <div className="top-0">
             {/* first section */}
-            <div className="relative h-[70vh]">
-                <Image
+            <div className="max-h-screen">
+                {/* <Image
                     src={Cover}
                     alt="coverPhoto"
                     className="w-full object-cover blur-md h-full absolute top-0 left-0"
@@ -50,7 +51,14 @@ export default function Home() {
                     <h3 className="font-semibold text-md">
                         WHERE STORIES UNFOLD
                     </h3>
-                </div>
+                </div> */}
+                <Image
+                    src={Banner}
+                    width={1920}
+                    height={1080}
+                    alt="banner"
+                    className="w-full h-full object-contain"
+                />
             </div>
 
             {/* second section */}
