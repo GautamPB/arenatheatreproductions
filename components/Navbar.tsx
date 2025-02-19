@@ -21,17 +21,10 @@ const Navbar = () => {
     const [isWhite, setIsWhite] = useState(true)
     const [isHome, setIsHome] = useState(true)
 
-    const [isClient, setIsClient] = useState(false)
-
     useEffect(() => {
-        setIsClient(true)
-    }, [])
-
-    useEffect(() => {
-        if (!isClient) return
         setSidebarOpen(false)
 
-        if (dynamicPath === '/') {
+        if (dynamicPath === '/' && window !== undefined) {
             setIsHome(true)
             window.addEventListener('scroll', () => {
                 const scroll = window.scrollY
@@ -49,7 +42,7 @@ const Navbar = () => {
             setIsWhite(false)
             setIsHome(false)
         }
-    }, [dynamicPath, isClient])
+    }, [dynamicPath])
 
     return (
         <div

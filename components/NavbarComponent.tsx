@@ -16,7 +16,7 @@ const NavbarComponent = ({ Icon, title, path, isWhite }: Props) => {
         <div
             onClick={() => router.push(path)}
             className={`flex p-2  hover:bg-[#117DBD] rounded-lg transition duration-200 items-center space-x-2 cursor-pointer ${
-                isWhite && window.location.pathname === '/'
+                isWhite && window?.location.pathname === '/'
                     ? 'text-white'
                     : 'text-black'
             } ${window?.location.pathname !== '/' && 'text-black'}`}
