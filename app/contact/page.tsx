@@ -1,7 +1,5 @@
-import React from 'react'
-
 const Contact = () => {
-    return <div>Contact</div>
+    return <div className="max-w-5xl mx-auto mt-6 p-4">Contact Us</div>
 }
 
 export default Contact
