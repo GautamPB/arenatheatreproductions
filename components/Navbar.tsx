@@ -6,7 +6,7 @@ import NavbarComponent from './NavbarComponent'
 import HomeIcon from '@mui/icons-material/Home'
 import WorkIcon from '@mui/icons-material/Work'
 import AutoStoriesIcon from '@mui/icons-material/AutoStories'
-import CallIcon from '@mui/icons-material/Call'
+// import CallIcon from '@mui/icons-material/Call'
 import Menu from '@/assets/icons/menu.svg'
 import { useState, useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
@@ -88,12 +88,12 @@ const Navbar = () => {
                     isWhite={isWhite}
                 />
 
-                <NavbarComponent
+                {/* <NavbarComponent
                     Icon={CallIcon}
                     title="Contact Us"
                     path="/contact"
                     isWhite={isWhite}
-                />
+                /> */}
             </div>
 
             <Image
@@ -128,12 +128,12 @@ const Navbar = () => {
                         path="/workshops"
                         isWhite={isWhite}
                     />
-                    <NavbarComponent
+                    {/* <NavbarComponent
                         Icon={CallIcon}
                         title="Contact Us"
                         path="/contact"
                         isWhite={isWhite}
-                    />
+                    /> */}
                 </div>
             )}
         </div>
