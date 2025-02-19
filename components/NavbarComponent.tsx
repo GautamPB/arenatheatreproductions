@@ -19,7 +19,7 @@ const NavbarComponent = ({ Icon, title, path, isWhite }: Props) => {
                 isWhite && window.location.pathname === '/'
                     ? 'text-white'
                     : 'text-black'
-            } ${window.location.pathname !== '/' && 'text-black'}`}
+            } ${window?.location.pathname !== '/' && 'text-black'}`}
         >
             <Icon />
             <h1>{title}</h1>
