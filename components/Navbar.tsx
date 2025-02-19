@@ -21,7 +21,14 @@ const Navbar = () => {
     const [isWhite, setIsWhite] = useState(true)
     const [isHome, setIsHome] = useState(true)
 
+    const [isClient, setIsClient] = useState(false)
+
     useEffect(() => {
+        setIsClient(true)
+    }, [])
+
+    useEffect(() => {
+        if (!isClient) return
         setSidebarOpen(false)
 
         if (dynamicPath === '/') {
@@ -42,7 +49,7 @@ const Navbar = () => {
             setIsWhite(false)
             setIsHome(false)
         }
-    }, [dynamicPath])
+    }, [dynamicPath, isClient])
 
     return (
         <div
