@@ -24,10 +24,10 @@ const Navbar = () => {
     useEffect(() => {
         setSidebarOpen(false)
 
-        if (dynamicPath === '/' && window !== undefined) {
+        if (dynamicPath === '/') {
             setIsHome(true)
-            window.addEventListener('scroll', () => {
-                const scroll = window.scrollY
+            window?.addEventListener('scroll', () => {
+                const scroll = window?.scrollY
 
                 if (scroll > 150) {
                     setShowNavbar(true)
