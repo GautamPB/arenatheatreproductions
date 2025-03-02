@@ -14,12 +14,18 @@ import { usePathname, useRouter } from 'next/navigation'
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
+    const [loaded, setLoaded] = useState(false)
+
     const dynamicPath = usePathname()
     const router = useRouter()
 
     const [showNavbar, setShowNavbar] = useState(false)
     const [isWhite, setIsWhite] = useState(true)
     const [isHome, setIsHome] = useState(true)
+
+    useEffect(() => {
+        setLoaded(true)
+    }, [])
 
     useEffect(() => {
         setSidebarOpen(false)
@@ -43,6 +49,8 @@ const Navbar = () => {
             setIsHome(false)
         }
     }, [dynamicPath])
+
+    if (!loaded) return null
 
     return (
         <div
