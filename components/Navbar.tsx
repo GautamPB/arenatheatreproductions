@@ -6,7 +6,7 @@ import NavbarComponent from './NavbarComponent'
 import HomeIcon from '@mui/icons-material/Home'
 import WorkIcon from '@mui/icons-material/Work'
 import AutoStoriesIcon from '@mui/icons-material/AutoStories'
-// import CallIcon from '@mui/icons-material/Call'
+import CallIcon from '@mui/icons-material/Call'
 import Menu from '@/assets/icons/menu.svg'
 import { useState, useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
@@ -40,13 +40,17 @@ const Navbar = () => {
                     setIsWhite(false)
                 } else {
                     setShowNavbar(false)
-                    setIsWhite(true)
+                    setIsWhite(false)
                 }
             })
         } else {
             setShowNavbar(true)
             setIsWhite(false)
             setIsHome(false)
+        }
+
+        if (sidebarOpen) {
+            setIsWhite(false)
         }
     }, [dynamicPath])
 
@@ -70,11 +74,9 @@ const Navbar = () => {
                 alt="logo"
                 width={60}
             />
-
             {/* home - pages 1 to 5 + theatre quote + upcoming show */}
             {/* ventures - dropdown menu with all the shows */}
             {/* reviews */}
-
             {/* navbar options */}
             <div className="md:flex hidden items-center space-x-6">
                 <NavbarComponent
@@ -96,14 +98,13 @@ const Navbar = () => {
                     isWhite={isWhite}
                 />
 
-                {/* <NavbarComponent
+                <NavbarComponent
                     Icon={CallIcon}
                     title="Contact Us"
                     path="/contact"
                     isWhite={isWhite}
-                /> */}
+                />
             </div>
-
             <Image
                 src={Menu}
                 alt="menu"
@@ -114,7 +115,6 @@ const Navbar = () => {
                     setIsWhite(false)
                 }}
             />
-
             {/* sidebar */}
             {sidebarOpen && (
                 <div className="md:hidden bg-white border-t space-y-3 p-4 shadow-lg absolute left-0 top-[5.5rem] w-full">

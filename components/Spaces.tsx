@@ -14,7 +14,7 @@ const Spaces = ({ image, location }: Props) => {
         <div className="flex flex-col cursor-pointer items-center relative">
             <Image src={image} height={175} alt="location" />
 
-            <div className="absolute -bottom-6 bg-[#117DBD] w-4/5 p-2 text-sm rounded-full flex items-center justify-center space-x-2">
+            <div className="absolute -bottom-6 bg-[#7BC5EA] w-4/5 p-2 text-sm rounded-full flex items-center justify-center space-x-2">
                 <Image src={StageIcon} width={30} alt="stageIcon" />
                 <h1 className="text-center">{location}</h1>
             </div>

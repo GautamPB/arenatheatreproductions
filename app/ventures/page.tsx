@@ -4,6 +4,7 @@ import tvm from '@/assets/images/posters/tvm.png'
 import tkamb from '@/assets/images/posters/tkamb.png'
 import seagull from '@/assets/images/posters/seagull.png'
 import tbm from '@/assets/images/posters/tumhaare baare mein.png'
+import tkr from '@/assets/images/posters/tkr.png'
 import Venture from '@/components/Venture'
 
 const Ventures = () => {
@@ -70,6 +71,16 @@ const Ventures = () => {
                     }
                     swap={true}
                     pagePath="/plays/tumhaare-baare-mein"
+                />
+
+                <Venture
+                    poster={tkr}
+                    title="The Kite Runner"
+                    lineOne={
+                        "The Kite Runner is an unforgettable, heartbreaking story of friendship between a wealthy boy from Kabul and his friend's servant's son. It has been adapted for the Stage by Matthew Spangler and adapted from the novel by Khaled Hosseini"
+                    }
+                    swap={false}
+                    pagePath="/plays/the-kite-runner"
                 />
             </div>
         </div>
