@@ -9,6 +9,7 @@ import Saad from '@/assets/images/Saad.jpeg'
 import Gautam from '@/assets/images/Gautam.png'
 import Krishna from '@/assets/images/Krishna.jpeg'
 import Liana from '@/assets/images/Liana.jpeg'
+import Elisha from '@/assets/images/Elisha.jpeg'
 import Nithin from '@/assets/images/Nithin.jpeg'
 import Sheiraphi from '@/assets/images/Sheiraphi.jpeg'
 import AG from '@/assets/images/Atta Galatta.png'
@@ -348,7 +349,7 @@ export default function Home() {
                             <CoreTeam
                                 image={Gautam}
                                 name="Gautam P B"
-                                designation="Production Head"
+                                designation="Production"
                             />
 
                             <CoreTeam
@@ -360,6 +361,12 @@ export default function Home() {
                             <CoreTeam
                                 image={Liana}
                                 name="Liana Tissan"
+                                designation="Production"
+                            />
+
+                            <CoreTeam
+                                image={Elisha}
+                                name="Elisha Alex"
                                 designation="Production"
                             />
 
